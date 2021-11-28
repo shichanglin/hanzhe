@@ -1,14 +1,14 @@
 /**
- * Created by hao.cheng on 2017/4/16.
+ * Created by  on 2017/4/16.
  */
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
 interface PageProps {
-    children?: ReactNode;
+  children?: ReactNode;
 }
 
 const Page = (props: PageProps) => {
-    return <div style={{ height: '100%' }}>{props.children}</div>;
+  return <div style={{ height: "100%" }}>{props.children}</div>;
 };
 
 export default Page;

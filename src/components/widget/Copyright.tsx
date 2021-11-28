@@ -1,19 +1,7 @@
-/*
- * File: Copyright.tsx
- * Desc: 版权信息
- * File Created: 2020-04-12 22:50:33
- * Author: chenghao
- * ------
- * Copyright 2020 - present, karakal
- */
-import React from 'react';
+import React from "react";
 
 const Copyright = () => {
-    return (
-        <div>
-            react-admin ©{new Date().getFullYear()} Created by yezihaohao@yezi.haohao@foxmail.com
-        </div>
-    );
+  return <div>南水北调中线信息科技有限公司 ©{new Date().getFullYear()}</div>;
 };
 
 export default Copyright;

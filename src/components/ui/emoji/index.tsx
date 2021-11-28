@@ -1,20 +1,20 @@
 /**
- * Created by hao.cheng on 2017/4/22.
+ * Created by  on 2017/4/22.
  */
-import React from 'react';
-import PropTypes from 'prop-types';
-import setFont from './iconfont';
+import React from "react";
+import PropTypes from "prop-types";
+import setFont from "./iconfont";
 
 setFont();
 type EmojiProps = {
-    type: string;
+  type: string;
 };
 const Emoji = ({ type }: EmojiProps) => {
-    const useTag = `<use xlink:href=${'#icon-' + type} />`;
-    return (
-        <i className="emoji">
-            <svg className="emoji" dangerouslySetInnerHTML={{ __html: useTag }} />
-            <style>{`
+  const useTag = `<use xlink:href=${"#icon-" + type} />`;
+  return (
+    <i className="emoji">
+      <svg className="emoji" dangerouslySetInnerHTML={{ __html: useTag }} />
+      <style>{`
             .emoji {
                 display: inline-block;
                 overflow: hidden;
@@ -27,12 +27,12 @@ const Emoji = ({ type }: EmojiProps) => {
                 overflow: hidden;
             }
         `}</style>
-        </i>
-    );
+    </i>
+  );
 };
 
 Emoji.propTypes = {
-    type: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default Emoji;
